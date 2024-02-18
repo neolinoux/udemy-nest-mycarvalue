@@ -7,3 +7,24 @@ Content-Type: application/json
   "email":"aaaaad@sd.com",
   "password":"1asdasdasd2"
 }
+
+###
+GET http://localhost:3000/auth
+
+###
+GET http://localhost:3000/auth/99
+
+###
+GET http://localhost:3000/auth?email=asd@sd.com
+
+###
+DELETE http://localhost:3000/auth/11
+
+###
+PATCH  http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+  "email":"eee@sd.com",
+  "password":"1asdasdasd2"
+}
