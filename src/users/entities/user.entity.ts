@@ -10,21 +10,21 @@ export class User {
   email: string;
 
   @Column()
-  // @Exclude()
+  @Exclude()
   password: string;
 
   @AfterInsert()
   logInsert() {
-    console.log("Inserted user with id ", this.id);
+    // console.log("Inserted user with id ", this.id);
   }
 
   @AfterUpdate()
   logUpdate() {
-    console.log("Update user with id ", this.id);
+    // console.log("Update user with id ", this.id);
   }
 
   @AfterRemove()
   logRemove() {
-    console.log("Removed user with id ", this.id);
+    // console.log("Removed user with id ", this.id);
   }
 }
